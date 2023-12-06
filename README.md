@@ -4,7 +4,7 @@
 >Al final de este ejercicio tendrás que comprender los siguientes conceptos.
 
 >[!WARNING]
->En un futuro próximo se realizará una prueba teórica para comprobar que realmente se denominan susodichos conceptos. Esta prueba se tendrá en cuenta para la nota final de la Unidad formativa
+>En un futuro próximo se realizará una prueba teórica para comprobar que realmente se denominan susodichos conceptos. Esta prueba se tendrá en cuenta para la nota final de la **unidad formativa**
 
 ## Propiedades y métodos
 
