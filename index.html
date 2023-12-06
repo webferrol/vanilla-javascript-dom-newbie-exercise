@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!--
+	<link rel="stylesheet" type="text/css" href="css/outline.css">
+	-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<div id="contenedor">
+	<header>
+		<h1>JavaScript 1</h1>
+	</header>
+	<main>
+		
+		<article>
+			
+			<h2>Empecemos</h2>
+			<div>
+				<ol>
+					<li>Crea un fichero externo scripts.js</li>
+				</ol>
+			</div>
+		
+		</article>
+
+		<article id="texto">
+			<h2>Funciones de texto</h2>
+			
+				<ul>
+					<li>innerHTML</li>
+					<li>textContent</li>
+					<li>value</li>
+				</ul>
+				<p>
+					<strong>innerHTML</strong> retorna el HTML como su nombre indica. Con bastante frecuencia, para leer o escribir texto en un elemento, la gente usa innerHTML. <strong>textContent</strong> debería usarse en su lugar. Ya que el texto no es procesado es más probable que tenga mejor rendimiento
+				</p>
+				<p>
+				Utilizando las funciones de arriba vamos a insertar texto mediante JavaScript. Para ello utilizaremos el método:
+				<code>document.querySelector()</code>
+				</p>
+				<label>Método innerHTML. Inserte su nombre</label>
+				<div id="innerHTML" class="caja">
+				Su texto aquí
+				</div>
+				<label>Método textContent. Inserte su nombe</label>
+				<div id="textContent" class="caja">
+				Su texto aquí
+				</div>
+				<label>Añadir "mundo"</label>
+				<div id="append" class="caja">
+				Hola
+				</div>
+				<label>Anteponer "Hola"</label>
+				<div id="prepend" class="caja">
+				mundo
+				</div>
+				<label>Método value. Inserte su nombre</label><br>
+				<input id="value" value="Su texto aquí" type="text">
+			
+		</article>
+
+
+
+		<article>
+			<h2>Eventos</h2>
+			
+				<ul>
+					<li>click</li>
+					<li>dblclick</li>
+				</ul>
+				<fieldset>
+				<legend>click/click</legend>
+				<p>
+					Al realizar un click con el ratón el texto del mismo cambiará por el texto "Hice click". Al realizar doble click cambiará por "Hice doble click".
+				</p>
+				<input type="button" class="boton" id="click-dblclick" value="Click">
+				</fieldset>
+
+				<fieldset>
+					<legend>click</legend>				
+					<p>
+					Al pulsar el botón Pegar deberá añadirse (sin sobreescribirse) el texto que exista en el área de texto en el contenedor cuyo nombre de clase es "destino".
+					</p>
+					<label for="origen">Texto de origen</label>
+					<br>
+					<textarea id="origen" class="origen"></textarea>
+					<input class="boton" type="button" value="Pegar" id="copiar">
+					<div id="destino" class="destino"></div>
+				</fieldset>
+			
+		</article>
+
+		<article id="opcion_show_hide">
+			
+			<h2>style.display</h2>
+			<p>Para modificar estilos en JavaScript disponemos de la propiedad <strong>style</strong>. Esta con la opción <strong>display</strong> nos permite cambiar el display de los elementos.</p>
+			<div>Ejemplos:
+				<ul>
+					<li>elemento.style.display = 'inline'</li>
+					<li>elemento.style.display = 'block'</li>
+					<li>elemento.style.display = 'none'</li>
+				</ul>
+			</div>
+			<div>
+				
+					<h3>Ejercicio</h3>
+					Al hacer click sobre el botón "¿Qué significa CDN?" se deberá mostrar el elemento con nombre de clase "oculto". El botón se trata en realidad de un enlace, por tanto tendrás que capturar el evento y evitar que realice su acción por defecto: <code>event.preventDefault()</code>.
+				
+				<a role="button" aria-label="Abrir ventana de diálogo" href="https://www.webferrol.com" class="boton" id="cdn">¿Qué significa CDN?</a>
+				<div class="oculto">Una <strong>CDN (Content Delivery Network)</strong> es un conjunto de ubicaciones en el mundo (19 puntos de presencia en OVH), que redistribuyen localmente el contenido de los servidores y guardan en caché los archivos que no necesitan actualización permanente, según unas reglas personalizables. <i class="fa fa-times-circle cerrar" aria-hidden="true"></i>
+				</div>
+				
+			</div>
+			
+		</article>
+
+		<article>
+			
+			<h2>classList.remove(),classList.add(),classList.toggle()</h2>
+			<div>
+				<ol id="add-remove-class">
+					
+					<li>Utiliza los métodos classList.add() y classList.remove() para modificar este elemento de lista. para ello utiliza el selector "#add-remove-class". La clase tiene varios nombre de clase "fa fa-blind fa-3x".
+					</li>
+				</ol>
+				<input class="boton" id="addClass" type="button" value="Añadir clases">
+				<input class="boton" id="removeClass" type="button" value="Borrar clases">
+			</div>
+			
+		</article>
+		<article>
+			
+			<h2>Ejercicios</h2>
+			<div>
+				<ol>					
+					<li>
+						Captura con JavaScript la etiqueta h1 de esta página y al hacer click sobre él que salga el mensaje "Hola mundo"
+					</li>
+					<li>
+					Al pulsar el botón <input class="boton" id="miBoton" type="button" value="Botón"> deberá ocultarse susodicho botón.
+					</li>
+					<li>Utiliza el evento mouseover para cuando pasemos el ratón sobre este <input class="boton" id="meMuero" type="button" value="enlace"> éste desaparezca</li>
+					<li> 
+						Obtén el valor y muestra el tipo de variable mediante una ventana modal el contenido de este cuadro de texto:
+						<form id="f-typeof">
+							<input type="text" value="Xurxo" id="miCaja">
+							<button class="boton">Tipo de dato</button>
+						</form>
+						<blockquote class="cita">
+						Una ventana modal es una ventana que se encuentra sobre todas las demas ventanas de la misma aplicacion, hasta que se cierra o se abre otra ventana modal. 
+						</b>
+					</li>
+					<li>
+						<label id="labelisNaN">
+							isNaN
+						</label>
+						<input type="text" id="isNaN" value="">
+						<input class="boton" id="bColor" type="button" value="Actualizar">
+					    <p id="pColor">
+					    	El color de fondo de este párrafo (id="pColor") se pondrá de color de rojo si en el campo de texto isNaN existe un número. En el css existe una clase llamada "rojo" que realiza esta acción. 
+					    </p>
+					</li>
+				</ol>
+			</div>
+			
+		</article>
+	</main>
+</div>
+</body>
+</html>
