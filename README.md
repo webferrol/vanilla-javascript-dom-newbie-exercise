@@ -1,9 +1,9 @@
 # Ejercicio básico de DOM (Document Object Model)
 
-![Ejercicios básicos de JS DOM](./design/screenshot.png)
-
->[!INFORMATION]
+>[!NOTE]
 >Descarga o clona este repositorio y realiza las instrucciones del fichero __index.html__
+
+![Ejercicios básicos de JS DOM](./design/screenshot.png)
 
 >[!NOTE]
 >Al final de este ejercicio tendrás que comprender los siguientes conceptos:
