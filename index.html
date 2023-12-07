@@ -15,7 +15,7 @@
 <body>
 <div id="contenedor">
 	<header>
-		<h1>JavaScript 1</h1>
+		<h1>JavaScript DOM. Básico.</h1>
 	</header>
 	<main>
 		
@@ -31,10 +31,11 @@
 		</article>
 
 		<article id="texto">
-			<h2>Funciones de texto</h2>
+			<h2>Propiedades de texto</h2>
 			
 				<ul>
 					<li>innerHTML</li>
+					<li>innerText</li>
 					<li>textContent</li>
 					<li>value</li>
 				</ul>
@@ -42,14 +43,14 @@
 					<strong>innerHTML</strong> retorna el HTML como su nombre indica. Con bastante frecuencia, para leer o escribir texto en un elemento, la gente usa innerHTML. <strong>textContent</strong> debería usarse en su lugar. Ya que el texto no es procesado es más probable que tenga mejor rendimiento
 				</p>
 				<p>
-				Utilizando las funciones de arriba vamos a insertar texto mediante JavaScript. Para ello utilizaremos el método:
-				<code>document.querySelector()</code>
+				Utilizando las propiedades de arriba vamos a insertar texto mediante JavaScript. Para ello utilizaremos el método:
+				<code>document.querySelector(selector: string)</code>
 				</p>
-				<label>Método innerHTML. Inserte su nombre</label>
+				<label>Propieadad innerHTML. Inserte su nombre</label>
 				<div id="innerHTML" class="caja">
 				Su texto aquí
 				</div>
-				<label>Método textContent. Inserte su nombe</label>
+				<label>Propiedad textContent. Inserte su nombe</label>
 				<div id="textContent" class="caja">
 				Su texto aquí
 				</div>
@@ -61,7 +62,7 @@
 				<div id="prepend" class="caja">
 				mundo
 				</div>
-				<label>Método value. Inserte su nombre</label><br>
+				<label>Propiedad value. Inserte su nombre</label><br>
 				<input id="value" value="Su texto aquí" type="text">
 			
 		</article>
