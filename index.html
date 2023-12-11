@@ -4,12 +4,11 @@
 	<title>JavaScript</title>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<!--
 	<link rel="stylesheet" type="text/css" href="css/outline.css">
 	-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
@@ -47,23 +46,23 @@
 				Utilizando las propiedades de arriba vamos a insertar texto mediante JavaScript. Para ello utilizaremos el método:
 				<code>document.querySelector(selector: string)</code>
 				</p>
-				<label>Propieadad innerHTML. Inserte su nombre</label>
+				<strong>Propieadad innerHTML. Inserte su nombre</strong>
 				<div id="innerHTML" class="caja">
 				Su texto aquí
 				</div>
-				<label>Propiedad textContent. Inserte su nombe</label>
+				<strong>Propiedad textContent. Inserte su nombe</strong>
 				<div id="textContent" class="caja">
 				Su texto aquí
 				</div>
-				<label>Añadir "mundo"</label>
+				<strong>Añadir "mundo"</strong>
 				<div id="append" class="caja">
 				Hola
 				</div>
-				<label>Anteponer "Hola"</label>
+				<strong>Anteponer "Hola"</strong>
 				<div id="prepend" class="caja">
 				mundo
 				</div>
-				<label>Propiedad value. Inserte su nombre</label><br>
+				<strong>Propiedad value. Inserte su nombre</strong><br>
 				<input id="value" value="Su texto aquí" type="text">
 			
 		</article>
@@ -160,7 +159,7 @@
 						</b>
 					</li>
 					<li>
-						<label id="labelisNaN">
+						<label for="isNaN" id="labelisNaN">
 							isNaN
 						</label>
 						<input type="text" id="isNaN" value="">
@@ -171,9 +170,15 @@
 					</li>
 				</ol>
 			</div>
+
+			<innerHTML></innerHTML>
 			
 		</article>
 	</main>
 </div>
+
+<script src="./js/script.js"></script>
+
 </body>
 </html>
+
