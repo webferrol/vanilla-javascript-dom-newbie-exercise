@@ -39,3 +39,17 @@ botonPegar.addEventListener('click', function() {
     const texto = textArea.value
     destino.append(texto)
 })
+
+const botonCDN = document.querySelector('#cdn')
+const oculto = document.querySelector('.oculto')
+
+botonCDN.addEventListener('click', function (e) {
+    e.preventDefault()
+    oculto.style.display = 'block'
+})
+
+const botonAnhadirClases = document.querySelector('#addClass')
+const ol = document.querySelector('#add-remove-class')
+botonAnhadirClases.addEventListener('click', function (nombreClase) {
+    
+})
