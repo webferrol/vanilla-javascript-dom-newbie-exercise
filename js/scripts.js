@@ -42,16 +42,26 @@ botonPegar.addEventListener('click', function() {
 
 const botonCDN = document.querySelector('#cdn')
 const oculto = document.querySelector('.oculto')
+const botonCerrar = document.querySelector('.fa-times-circle')
 
 botonCDN.addEventListener('click', function (e) {
     e.preventDefault()
     oculto.style.display = 'block'
+    botonCerrar.addEventListener('click', function () {
+        oculto.style.display = 'none'
+    })
 })
 
 const botonAnhadirClases = document.querySelector('#addClass')
+const botonEliminarClases = document.querySelector('#removeClass')
 const ol = document.querySelector('#add-remove-class')
-botonAnhadirClases.addEventListener('click', function (nombreClase) {
+
+botonAnhadirClases.addEventListener('click', function (clases) {
     
+})
+
+botonAnhadirClases.addEventListener('click', function (clases) {
+
 })
 
 
