@@ -8,7 +8,7 @@
 	<!--
 	<link rel="stylesheet" type="text/css" href="css/outline.css">
 	-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
@@ -50,7 +50,7 @@
 				<div id="innerHTML" class="caja">
 				Su texto aquí
 				</div>
-				<strong>Propiedad textContent. Inserte su nombe</strong>
+				<strong>Propiedad textContent. Inserte su nombre</strong>
 				<div id="textContent" class="caja">
 				Su texto aquí
 				</div>
@@ -109,13 +109,14 @@
 					<li>elemento.style.display = 'none'</li>
 				</ul>
 			</div>
-			<div>
+			<div class="cdn-exercise">
 				
 					<h3>Ejercicio</h3>
 					Al hacer click sobre el botón "¿Qué significa CDN?" se deberá mostrar el elemento con nombre de clase "oculto". El botón se trata en realidad de un enlace, por tanto tendrás que capturar el evento y evitar que realice su acción por defecto: <code>event.preventDefault()</code>.
 				
 				<a role="button" aria-label="Abrir ventana de diálogo" href="https://www.webferrol.com" class="boton" id="cdn">¿Qué significa CDN?</a>
-				<div class="oculto">Una <strong>CDN (Content Delivery Network)</strong> es un conjunto de ubicaciones en el mundo (19 puntos de presencia en OVH), que redistribuyen localmente el contenido de los servidores y guardan en caché los archivos que no necesitan actualización permanente, según unas reglas personalizables. <i class="fa fa-times-circle cerrar" aria-hidden="true"></i>
+				<div class="oculto">Una <strong>CDN (Content Delivery Network)</strong> es un conjunto de ubicaciones en el mundo (19 puntos de presencia en OVH), que redistribuyen localmente el contenido de los servidores y guardan en caché los archivos que no necesitan actualización permanente, según unas reglas personalizables. 
+					<i role="button" aria-label="Cerrar" class="fa fa-times-circle cerrar" aria-hidden="true"></i>
 				</div>
 				
 			</div>

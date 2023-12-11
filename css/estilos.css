@@ -29,6 +29,10 @@ a.enlace:hover{
 	margin: 0 auto;
 }
 
+.cdn-exercise {
+	position: relative;
+}
+
 .oculto{
 	display: none;
 	position: absolute;
@@ -48,6 +52,11 @@ a.enlace:hover{
 	top:5px;
 	right: 5px;
 }
+
+.cerrar::before{
+	content: '✖'
+}
+
 
 .caja{
 	border: 1px solid #000;
