@@ -53,3 +53,35 @@ const ol = document.querySelector('#add-remove-class')
 botonAnhadirClases.addEventListener('click', function (nombreClase) {
     
 })
+
+
+
+const h1 = document.querySelector('h1')
+h1.addEventListener('click', function () {
+    alert('Hola mundo')
+})
+
+const botonOcultar = document.querySelector('#miBoton')
+botonOcultar.addEventListener('click', function () {
+    botonOcultar.style.display = 'none'
+})
+
+const enlaceAOcultar = document.querySelector('#meMuero')
+enlaceAOcultar.addEventListener('mouseover', function () {
+    enlaceAOcultar.style.display = 'none'
+})
+
+enlaceAOcultar.addEventListener('click', function (event) {
+    event.preventDefault()
+})
+
+const inputIsNaN = document.querySelector('#isNaN')
+const botonActualizar = document.querySelector('#bColor')
+const parrafoColor = document.querySelector('#pColor')
+
+botonActualizar.addEventListener('click', function () {
+    console.log(inputIsNaN.value)
+    if (!isNaN(inputIsNaN.value)) {
+        parrafoColor.classList.add('rojo')
+    }
+})
