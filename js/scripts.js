@@ -30,3 +30,12 @@ botonClickDobleClick.addEventListener('click', function () {
 botonClickDobleClick.addEventListener('dblclick', function () {
     botonClickDobleClick.value = 'Hice doble click'
 })
+
+const textArea = document.querySelector('#origen')
+const botonPegar = document.querySelector('#copiar')
+const destino = document.querySelector('#destino')
+
+botonPegar.addEventListener('click', function() {
+    const texto = textArea.value
+    destino.append(texto)
+})
