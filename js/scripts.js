@@ -103,5 +103,7 @@ const parrafoColor = document.querySelector('#pColor')
 botonActualizar.addEventListener('click', function () {
     if (!isNaN(inputIsNaN.value)) {
         parrafoColor.classList.add('rojo')
+    } else {
+        parrafoColor.classList.remove('rojo')
     }
 })
