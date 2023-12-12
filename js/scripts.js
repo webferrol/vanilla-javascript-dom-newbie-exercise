@@ -112,3 +112,14 @@ botonActualizar.addEventListener('click', function () {
         parrafoColor.classList.remove('rojo')
     }
 })
+
+
+// Lo que hacen los buscadores
+
+// inputIsNaN.addEventListener('input', function name(params) {
+//     if (!isNaN(inputIsNaN.value)) {
+//         parrafoColor.classList.add('rojo')
+//     } else {
+//         parrafoColor.classList.remove('rojo')
+//     }
+// })
