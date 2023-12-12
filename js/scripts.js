@@ -56,12 +56,14 @@ const botonAnhadirClases = document.querySelector('#addClass')
 const botonEliminarClases = document.querySelector('#removeClass')
 const ol = document.querySelector('#add-remove-class')
 
-botonAnhadirClases.addEventListener('click', function (clases) {
-    
+botonAnhadirClases.addEventListener('click', function () {
+    ol.firstElementChild.classList.add("fa-4x")
 })
 
-botonAnhadirClases.addEventListener('click', function (clases) {
-
+botonEliminarClases.addEventListener('click', function () {
+    ol.firstElementChild.classList.remove("fa")
+    ol.firstElementChild.classList.remove("fa-blind")
+    ol.firstElementChild.classList.remove("fa-3x")
 })
 
 
