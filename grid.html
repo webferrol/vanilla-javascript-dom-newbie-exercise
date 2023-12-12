@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+
+        img {
+	        width: 100%;
+        }
+      
+        .grid-container {
+            display: grid;
+            gap: .5rem; /*shorthand de colum-gap y row-gap*/
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            'foto foto header header header'
+            'foto foto content content side1'
+            'sidebar sidebar content content side2'
+            ;
+            min-height: 100vh;
+        }
+
+
+        .grid-item {
+            border-radius: 1rem;
+        }
+
+
+        .grid-item:nth-child(1) {
+            grid-area: foto;
+            object-fit: cover;
+            height: 100%;
+            /* grid-column: 1 / span 2;
+            grid-row: 1 / span 2; */
+        }
+        .grid-item:nth-child(2) {
+            grid-area: header;
+            background-color: rgb(70 166 131);
+            /* grid-column: 3 / span 3; */
+        }
+        .grid-item:nth-child(3) {
+            grid-area: sidebar;
+            background-color: rgb(181 80 146);
+            /* grid-column: 1 / span 2; */
+        }
+        .grid-item:nth-child(4) {
+            grid-area: content;
+            background-color: rgb(159 77 73);
+            /* grid-column: 3 / span 2;
+            grid-row: 2 / span 2; */
+        }
+        .grid-item:nth-child(5) {
+            grid-area: side1;
+            background-color: rgb(49 84 69);
+            /* grid-column: 5 / span 1;
+            grid-row: 2 / span 1; */
+
+        }
+        .grid-item:nth-child(6) {
+            grid-area: side2;
+            background-color: rgb(101 90 88);
+        }
+    </style>
+</head>
+<body>
+  
+
+    <div class="grid-container">
+        <img src="./300.jpg" class="grid-item" alt="">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</body>
+</html>
