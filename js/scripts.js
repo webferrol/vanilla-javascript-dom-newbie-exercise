@@ -88,8 +88,13 @@ enlaceAOcultar.addEventListener('click', function (event) {
 })
 
 // Ejercicio 4
+const formulario = document.querySelector('#f-typeof')
 const botonTipoDeDato = document.querySelector('#f-typeof .boton')
 const cajaInput = document.querySelector('#miCaja')
+
+formulario.addEventListener('submit', function (event) {
+    event.preventDefault()
+})
 
 botonTipoDeDato.addEventListener('click', function () {
     alert(typeof(cajaInput.value))
