@@ -88,7 +88,7 @@ enlaceAOcultar.addEventListener('click', function (event) {
 })
 
 // Ejercicio 4
-const botonTipoDeDato = document.querySelector('.boton')
+const botonTipoDeDato = document.querySelector('#f-typeof .boton')
 const cajaInput = document.querySelector('#miCaja')
 
 botonTipoDeDato.addEventListener('click', function () {
