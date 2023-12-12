@@ -57,27 +57,27 @@ const botonEliminarClases = document.querySelector('#removeClass')
 const ol = document.querySelector('#add-remove-class')
 
 botonAnhadirClases.addEventListener('click', function () {
-    ol.firstElementChild.classList.add("fa-4x")
+    ol.firstElementChild.classList.add("fa", "fa-blind", "fa-3x")
 })
 
 botonEliminarClases.addEventListener('click', function () {
-    ol.firstElementChild.classList.remove("fa")
-    ol.firstElementChild.classList.remove("fa-blind")
-    ol.firstElementChild.classList.remove("fa-3x")
+    ol.firstElementChild.classList.remove("fa", "fa-blind", "fa-3x")
 })
 
 
-
+// Ejercicio 1
 const h1 = document.querySelector('h1')
 h1.addEventListener('click', function () {
-    alert('Hola mundo')
+    h1.textContent = 'Hola mundo'
 })
 
+// Ejercicio 2
 const botonOcultar = document.querySelector('#miBoton')
 botonOcultar.addEventListener('click', function () {
     botonOcultar.style.display = 'none'
 })
 
+// Ejercicio 3
 const enlaceAOcultar = document.querySelector('#meMuero')
 enlaceAOcultar.addEventListener('mouseover', function () {
     enlaceAOcultar.style.display = 'none'
@@ -87,6 +87,15 @@ enlaceAOcultar.addEventListener('click', function (event) {
     event.preventDefault()
 })
 
+// Ejercicio 4
+const botonTipoDeDato = document.querySelector('.boton')
+const cajaInput = document.querySelector('#miCaja')
+
+botonTipoDeDato.addEventListener('click', function () {
+    alert(typeof(cajaInput.value))
+})
+
+// Ejercicio 5
 const inputIsNaN = document.querySelector('#isNaN')
 const botonActualizar = document.querySelector('#bColor')
 const parrafoColor = document.querySelector('#pColor')
